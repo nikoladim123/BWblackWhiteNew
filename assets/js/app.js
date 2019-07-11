@@ -58,6 +58,7 @@ function myFunction() {
 var recentWorkImgDivHtwo = document.getElementsByClassName('recentWorkImgDivHtwo');
 var recentWorkImgDiv = document.getElementsByClassName('recentWorkImgDiv');
 var recentWorkImgDivHtwoAnim = document.getElementsByClassName('recentWorkImgDivHtwoAnim');
+var spanCapital = document.getElementsByClassName('spanCapital');
 
 // recentWorkImgDiv[0].addEventListener('mouseenter',()=>{
 //   recentWorkImgDivHtwo[0].style.backgroundPosition = '0%';
@@ -66,8 +67,14 @@ function recentWorkText() {
   if(window.innerHeight / 100 * 80 >= recentWorkImgDivHtwo[0].getBoundingClientRect().bottom){
     recentWorkImgDivHtwoAnim[0].style.left = '100%';
     setTimeout(function () {
-      recentWorkImgDiv[0].style.marginTop = '18.789vw';
       recentWorkImgDivHtwo[0].style.opacity = '0.5';
+
+      setTimeout(function () {
+        recentWorkImgDivHtwo[0].style.fontSize = '3.5vw';
+        spanCapital[0].style.fontSize = '9.76vw';
+        spanCapital[1].style.fontSize = '9.76vw';
+        recentWorkImgDiv[0].style.marginTop = '18.789vw';
+      }, 500);
     }, 500);
   }
 }
@@ -187,6 +194,7 @@ function instaAnim() {
   yellowInstagramBnd[0].style.left = '100%';
   setTimeout(function () {
     instagramSectionHTWO[0].style.opacity = '1';
+    instagramSectionHTWO[0].style.fontSize = '3.9vw';
     setTimeout(function () {
       gridBoxSpecial[0].style.marginTop = '1.341vw';
     }, 500);
@@ -199,6 +207,7 @@ function instaAnimTwo() {
     setTimeout(function () {
       instagramTwoHtwo[0].style.opacity = '1';
       instagramSection[0].style.borderBottom = '0vw solid black';
+      instagramTwoHtwo[0].style.fontSize = '3.9vw';
     }, 500);
   }else{
 
@@ -228,6 +237,8 @@ function portfolioRun() {
     setTimeout(function () {
       normalCarSection[0].style.paddingTop = '0';
       normalCarSectionHTWO[0].style.opacity = '0.5';
+      normalCarSectionHTWO[0].style.fontSize = '3.6vw';
+      hTwoSpamNorm[0].style.fontSize = '12vw';
     }, 500);
   }
 }
@@ -245,7 +256,11 @@ function serviceRun() {
 
     setTimeout(function () {
       topServicesHeading[0].style.opacity = '0.5';
-      main[0].style.paddingBottom = '0';
+      topServicesHeading[0].style.fontSize = '3.513vw';
+      topServiceHeadingSpan[0].style.fontSize = '10.834vw';
+      setTimeout(function () {
+        main[0].style.paddingBottom = '0';
+      }, 500);
     }, 500);
   }
 }
@@ -266,6 +281,8 @@ function testimonialRun() {
     setTimeout(function () {
       testimonials[0].style.borderTop = '0vw solid #3c4145';
       normalCarSectionHTwoCarTwo[0].style.opacity = '0.5';
+      normalCarSectionHTwoCarTwo[0].style.fontSize = '3.9vw';
+      testiSpan[0].style.fontSize = '12.195vw';
     }, 500);
   }
 }
