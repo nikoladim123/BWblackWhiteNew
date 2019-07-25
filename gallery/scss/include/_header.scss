@@ -1,0 +1,118 @@
+/* Header css */
+.top-bar-social{
+	padding: 4px 0 ;
+	border-bottom: 1px solid rgba($white,0.3);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	@media screen and (min-width:768px){
+		padding: 4px 57px ;
+		margin-bottom: 0px;	
+	}
+	.social-icons{
+		opacity: 0.7;
+	}
+}
+.social-icons-top{
+	> li{
+		display: inline-block;
+		margin-left: 8px;
+		@media screen and (max-width: 480px){
+			margin-left: 3px;
+		}
+		> a{
+			display: block;
+			padding: 2px 6px;
+			@include gradient-vertical(#818181, #949494);
+			font-size: 13px;
+			border-radius: 4px;
+			color: $white;
+			height: 23px;
+			width: 23px;
+			text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+			opacity: 0.5;
+			transition: all 0.2s linear 0s;
+			&:hover{
+				background: $primary-color;
+				opacity: 1;
+			}
+		}
+	}
+}
+.social-section{
+	background: $social-bg;
+	padding : 62px 15px 130px;
+	@media screen and (max-width: 768px){
+		padding: 60px 15px;	
+	}
+	.social-heading{
+		h2{
+			margin: 0px;
+			font-family: $heading-font;
+			color: $white;
+			font-size: 72px;
+			margin-bottom: 55px;
+			display: inline-block;
+			position: relative;
+			text-shadow: 1px 1px 0.5px rgba($black, 0.22);
+			@media screen and (max-width: 768px){
+				font-size: 22px;
+				margin-bottom: 40px;
+			}
+			&:after{
+				bottom: -16px;
+			    content: "";
+			    height: 2px;
+			    left: 50%;
+			    margin-left: -59.5px;
+			    position: absolute;
+			    width: 125px;
+				background: $primary-color;
+
+			}
+		}
+	}
+}
+.social-icons{
+	position: relative;
+	> li{
+		display: inline-block;
+		margin-right: 4px;
+		> a{
+			display: block;
+			padding: 3px 8px;
+			font-size: 22px;
+			border-radius: 50%;
+			width: 39px;
+			height: 39px;
+			color: $white;
+			background: $social-icon;
+			text-shadow: 0px 1px 0.5px rgba(0,0,0,0.6);
+			transition: all 0.2s linear 0s;
+			&:hover{
+				color : $text-color !important;
+			}
+		}
+	}
+}
+.login-btn{
+	> li{
+		display: inline-block;
+		> a{
+			display: block;
+			padding: 2px 12px;
+			border-radius: 4px;
+			color: rgba($white,0.8);
+			&:hover{
+				color : $primary-color;
+			}
+			@media screen and (max-width:768px){
+				padding: 2px 6px;
+			}
+		}
+	}
+}
+
+/* end header css */
