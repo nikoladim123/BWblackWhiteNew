@@ -288,6 +288,17 @@ function testimonialRun() {
 }
 
 
+// carBox redirect on click
+
+var carBox = document.getElementsByClassName('carBox');
+
+for (var i = 0; i < carBox.length; i++) {
+  carBox[i].addEventListener('click',(e)=>{
+    window.sessionStorage.selection = e.target.dataset.num;
+  });
+};
+
+
 window.addEventListener("scroll",()=>{
   recentWorkText();
   portfolioRun();
