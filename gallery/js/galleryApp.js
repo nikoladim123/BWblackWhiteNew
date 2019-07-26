@@ -99,7 +99,7 @@ function davidOmid() {
 
 
 window.addEventListener("scroll",()=>{
-  recentWorkText();
+  // recentWorkText();
   davidOmidFire();
   davidOmid();
   console.log(123);
