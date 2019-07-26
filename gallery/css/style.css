@@ -4,6 +4,7 @@ ul {
   padding: 0;
   list-style: none;
   margin-bottom: 0;
+  display: flex;
 }
 
 @font-face {
@@ -1646,7 +1647,9 @@ body {
 .rndTwoContainer .recentImgItaly{
   color: white;
 }
-
+ul.social-icons-top li{
+  margin: 1vw;
+}
 
 /* .aToSection{
   position: absolute;
