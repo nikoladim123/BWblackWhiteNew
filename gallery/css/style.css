@@ -1195,7 +1195,7 @@ body {
     -ms-flex-wrap: nowrap;
     /* flex-wrap: nowrap; */
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 45vw;
   }
 }
@@ -1360,7 +1360,7 @@ body {
     padding: 26px 0px 19px;
     text-align: right;
     width: 713px;
-    padding-left: 8vw;
+    padding-left: 50px;
   }
 }
 
